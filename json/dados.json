@@ -1,0 +1,76 @@
+{            
+    "produtos": [
+        {
+            "titulo": "MALBEC",
+            "preco": 199.90,
+            "imagem": "./assets/produtos/malbec_desodorante-colonia.png",
+            "alt": "Malbec X Desodorante Colônia 100ml",
+            "descricao": "Malbec X Desodorante Colônia 100ml",
+            "quantidade": 50,
+            "categoria": "perfume"
+        },
+        {
+            "titulo": "BOTICOLLECTION",
+            "preco": 184.90,
+            "imagem": "./assets/produtos/perfume-thaty.png",
+            "alt": "Thaty Desodorante Colônia 200ml",
+            "descricao": "Thaty Desodorante Colônia 200ml",
+            "quantidade": 30,
+            "categoria": "corpo"
+        },
+        {
+            "titulo": "Nativa SPA",
+            "preco": 82.90,
+            "imagem": "./assets/produtos/nativa-spa-lilac-creme-hidratante-corporal.png",
+            "alt": "Loção Renovadora Desodorante Hidratante Corporal Nativa Spa Lilac 400ml",
+            "descricao": "Loção Renovadora Desodorante Hidratante Corporal Nativa Spa Lilac 400ml",
+            "quantidade": 35,
+            "categoria": "corpo"
+        },
+        {
+            "titulo": "CUIDE-SE BEM",
+            "preco": 69.90,
+            "imagem": "./assets/produtos/cuide-se-bem-creme-hidratante-framboesa.png",
+            "alt": "Loção Desodorante Hidratante Cuide-se Bem Feira Framboesa 400ml",
+            "descricao": "Loção Desodorante Hidratante Cuide-se Bem Feira Framboesa 400ml",
+            "quantidade": 30,
+            "categoria": "perfume"
+        },
+        {
+            "titulo": "INTENSE",
+            "preco": 39.90,
+            "imagem": "./assets/produtos/glos_lab_bubbaloo.png",
+            "alt": "Gloss Labial Rosa Tutti Frutti Bubbaloo 5ml",
+            "descricao": "Gloss Labial Rosa Tutti Frutti Bubbaloo 5ml",
+            "quantidade": 15,
+            "categoria": "make"
+        },
+        {
+            "titulo": "INTENSE",
+            "preco": 25.90,
+            "imagem": "./assets/produtos/intense-pop-base-cor-160-sensorial.png",
+            "alt": "Base Mate Camuflagem Cor 160 Pop! 20ml",
+            "descricao": "Base Mate Camuflagem Cor 160 Pop! 20ml",
+            "quantidade": 15,
+            "categoria": "make"
+        },
+        {
+            "titulo": "FLORATTA",
+            "preco": 284.70,
+            "imagem": "./assets/produtos/kit-maes-floratta-red.png",
+            "alt": "Kit Presente Dia das Mães Red (3 itens)",
+            "descricao": "Kit Presente Dia das Mães Red (3 itens)",
+            "quantidade": 20,
+            "categoria": "kit-maes"
+        },
+        {
+            "titulo": "ELYSÉE",
+            "preco": 431.70,
+            "imagem": "./assets/produtos/kit-maes-elysee-nuit-perfume-edp-creme-acetinado.png",
+            "alt": "Combo Presente Dia das Mães Nuit  (3 itens)",
+            "descricao": "Combo Presente Dia das Mães Nuit  (3 itens)",
+            "quantidade": 20,
+            "categoria": "kit-maes"
+        }
+    ]
+}
