@@ -1,0 +1,29 @@
+.texto-menor{
+    font-size: 13px;
+}
+.divs-facilidades{
+    width: 20em;
+}
+.div-novidades{
+    width: 20em;
+}
+.botao-lilas{
+    background-color: #9353FF !important; 
+}
+.verde-limao {
+    color: #DAFF01;
+}
+.d-block{
+    width: 3.75em;
+}
+.imagem_categoria{
+    height: 21.5em;
+}
+.imagem-produtos{
+    height: 30em;
+}
+@media(min-width: 768px){
+    .div-novidades{
+        width: 696px;
+    }
+}
