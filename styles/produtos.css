@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --lilas: #9353FF;
+    --verde-limao:#DAFF01;
+    --cinza-claro: #E3E1D9;
+
+    --font-primaria:'Montserrat', sans-serif;
+    --font-secundaria: 'Poppins', sans-serif;
+    --font-terciaria:'Josefin Sans', sans-serif;
+}
+
+.titulo__box-produtos{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 7% 0 2% 0;
+}
+
+.box__produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__produtos__card{
+    border: 1px solid var(--cinza-claro);
+    width: 250px;
+    margin: 15px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.card-title{
+    font-weight: 600;
+    font-size: 0.7em;
+    margin: 3px;
+}
+
+.card-text{
+    font-size: 0.6em;
+    margin: 3px;
+}
+
+.preco-sem-desconto{
+    text-decoration: line-through;
+}
+
+.btn-produto{
+    font-size: 0.6em;
+    margin-left: 3px;
+    background-color: var(--lilas);
+    color: var(--white);
+    padding: 2px;
+}
+
+.imagem-produtos{
+    width: 100%;
+    height: auto;
+
+}
+
+.box__produtos__card:hover{
+    -webkit-transform: scale(1.01);
+    transform: scale(1.05)
+}
+
+.box__facilidades{
+    display: flex;
+    padding: 10px;
+    font-size: 0.8em;
+    justify-content: space-around;
+    align-items: center;
+}

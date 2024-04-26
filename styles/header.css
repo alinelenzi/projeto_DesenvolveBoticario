@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --lilas: #9353FF;
+    --verde-limao:#DAFF01;
+
+    --font-primaria:'Montserrat', sans-serif;
+    --font-secundaria: 'Poppins', sans-serif;
+    --font-terciaria:'Josefin Sans', sans-serif;
+}
+
+.container__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--white);
+    z-index: 1;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    padding: 5px;
+}
+
+.nav-img{
+    width: 50px;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-link{
+    font-size: 0.8em;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+    color: var(--lilas);
+}
+
+.input__search{
+    border: 1px solid var(--lilas);
+    width: auto;
+}
+
+.input__search i{
+    color: var(--lilas);
+    margin: 3px;   
+}
+
+.input__search i:hover{
+    opacity: 0.3;
+}
+
+.input__search input{
+    background-color: transparent;
+    border: none;
+    font-size: 0.7em;
+}
+
+.input__search input:focus-visible{
+    outline: none;
+}
+
+.icon__user, .icon__bag{
+    color: var(--lilas);
+}
+
+.icon__bag{
+    margin-right: 20px;
+}
+
+.icon__user:hover, .icon__bag:hover{
+    opacity: 0.7;
+}
+
+@media(max-width: 768px) {
+    .container__nav{
+        position: absolute;
+    }
+    .nav-link{
+        font-size: 0.6em;
+    }
+    .nav-img{
+        width: 30px;
+    }
+}
+
+@media(max-width: 540px){
+    .input__search{
+        display: none;
+    }
+}
+

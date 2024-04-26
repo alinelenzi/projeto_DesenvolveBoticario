@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --lilas: #9353FF;
+    --verde-limao:#DAFF01;
+
+    --font-primaria:'Montserrat', sans-serif;
+    --font-secundaria: 'Poppins', sans-serif;
+    --font-terciaria:'Josefin Sans', sans-serif;
+}
+
+.div__novidades{
+    border: 1px solid  var(--black);
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    margin: 2em auto;
+    width: 600px;
+    text-align: center;
+    padding: 10px;
+}
+
+.input-novidades{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.input-email{
+    border: 1px solid var(--black);
+    width: 80%;
+    font-size: 0.8em;
+}
+
+.input-email:focus-visible{
+    outline: none;
+}
+
+.btn__form-novidades{
+    font-size: 0.7em;
+    color: var(--white);
+    right: 0;
+    padding: 4px;
+}
+
+@media(max-width: 768px){
+    .div__novidades{
+        width: 450px;
+    }
+}
+
+@media(max-width: 490px){
+    .div__novidades{
+        width: 320px;
+    }
+}
+

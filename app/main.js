@@ -8,3 +8,4 @@ async function getBuscarProdutos(){
     console.table(produtos)
     exibirOsProdutos(produtos)
 }
+

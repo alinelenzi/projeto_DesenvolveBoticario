@@ -5,277 +5,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/categorias.css">
+    <link rel="stylesheet" href="./styles/facilidades.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/novidades.css">
+    <link rel="stylesheet" href="./styles/produtos.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <title>oGlamouria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
+    <header id="header">
+        <div class="container">
+            <div class="container__nav">
+                <a class="nav-link" href="index.html"><img class="nav-img" src="./assets/favicon.png" alt="Logo da loja oGlamouria"></a>
+                <nav>
+                    <ul> 
+                        <li><a class="nav-link" href="#">oGlamouria</a></li>
+                        <li><a class="nav-link" href="#">Lançamentos</a></li>
+                        <li><a class="nav-link" href="#">Promoções</a></li>
+                        <li><a class="nav-link" href="#">Presentes</a></li>
+                    </ul>
+                </nav>
+                <div class="input__search">
+                    <input type="text" placeholder="Buscar" id="buscar">
+                    <i class="fa-solid fa-magnifying-glass" onclick="limparForm('buscar')"></i>
+                </div>
+                <div class="icon__user">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="icon__bag">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div> 
+        </div>
+    </header>       
     
-    <nav class="navbar navbar-expand-md bg-white">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#"><h1 class="m-0"><img class="d-block" src="./assets/logo.jpg" alt="Logo da loja oGlamouria"></h1></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">oGlamouria</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Lançamentos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Promoções</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Presentes</a>
-            </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2 rounded-0" type="search" placeholder="Digite o produto" aria-label="Pesquisar">
-                <button class="btn btn-light rounded-0" type="submit">Buscar</button>
-            </form>
-        </div>
-        </div>
-    </nav>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositivo 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Diapositivo 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Diapositivo 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Diapositivo 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Diapositivo 5"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Diapositivo 6"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="w-100 img-fluid d-none d-xl-block" src="./assets/banners/banner1.png" alt="Foto com 5 tipos de hidratantes da marca Nativa SPA">
+    <div class="slider" >
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
+            <input type="radio" name="btn-radio" id="radio5">
+                    
+            <div class="slide-box primeiro" id="img">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner1.png" alt="Foto com 5 tipos de hidratantes da marca Nativa SPA"></a> 
             </div>
-            <div class="carousel-item">
-                <img class="w-100 img-fluid d-none d-xl-block" src="./assets/banners/banner2.png" alt="Modelo feminina segurando perfume Lily Soleil">
+            <div class="slide-box">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner2.png" alt="Modelo feminina segurando perfume Lily Soleil"></a>
             </div>
-            <div class="carousel-item">
-                <img class="w-100 img-fluid d-none d-xl-block" src="./assets/banners/banner3.png" alt="Foto lançamento de 4 produtos da linha Privée">
+            <div class="slide-box">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner3.png" alt="Foto lançamento de 4 produtos da linha Privée"></a>
+                </div>
+            <div class="slide-box">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner4.png" alt="Banner de promoção da semana do beijo, leve 2 batons intense e pague 1"></a>
             </div>
-            <div class="carousel-item">
-                <img class="w-100 img-fluid d-none d-xl-block" src="./assets/banners/banner4.png" alt="Banner de promoção da semana do beijo, leve 2 batons intense e pague 1">
+            <div class="slide-box">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner5.png" alt="Foto kit de presente de dia das mães da linha Lily"></a>
             </div>
-            <div class="carousel-item">
-                <img class="w-100 img-fluid d-none d-xl-block" src="./assets/banners/banner5.png" alt="Foto kit de presente de dia das mães da linha Lily">
-            </div>
-            <div class="carousel-item">
-                <img class="w-100 img-fluid d-none d-xl-block" src="./assets/banners/banner6.png" alt="Foto kit de presente de dia das mães da linha Lily">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anterior</font></font></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Próximo</font></font></span>
-        </button>
-    </div>
 
-    <h2 class="text-center my-3 my-xl-5">Busque por categoria:</h2>
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
 
-    <div class='container row mx-auto g-4'>
-        <div class = "col-6 col-md-4 col-xxl-2">
-            <div class="card rounded-0 border-0">
-                <img class="d-none d-xl-block imagem_categoria" src="./assets/categorias/categoria-perfumes.jpg" alt="Camiseta masculina de manga na cor verde, com bolso, com detalhe laranja.">
-                <div class="card-header bg-black text-bg-dark">
-                    <a href="#"><p class="text-center card-text">Perfumaria</p></a>
-                </div>
-            </div>
-        </div>
-        <div class = "col-6 col-md-4 col-xxl-2">
-            <div class="card rounded-0 border-0">
-                <img class="d-none d-xl-block imagem_categoria" src="./assets/categorias/categoria-corpo.jpg" alt="bolsa de cousa marron com alça dourada">
-                <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center card-text">Corpo e Banho</p>
-                </div>
-            </div>
-        </div>
-        <div class = "col-6 col-md-4 col-xxl-2">
-            <div class="card rounded-0 border-0">
-                <img class="d-none d-xl-block imagem_categoria" src="./assets/categorias/categoria-makes.jpg" alt="Tênis Com a base branca e um detalhe laranja e na parte de cima colorido nas cores laranja, azul, cinsa e preto">
-                <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center card-text">Make</p>
-                </div>
-            </div>
-        </div>
-        <div class = "col-6 col-md-4 col-xxl-2">
-            <div class="card rounded-0 border-0">
-                <img class="d-none d-xl-block imagem_categoria"  src="./assets/categorias/categoria-cabelo.jpg" alt="Cinco calças jeans de diferentes tons.">
-                <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center card-text">Cabelos</p>
-                </div>
-            </div>
-        </div>
-        <div class = "col-6 col-md-4 col-xxl-2">
-            <div class="card rounded-0 border-0">
-                <img class="d-none d-xl-block imagem_categoria" src="./assets/categorias/categoria-shicare.png" alt="Blusa de frio marron">
-                <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center card-text">Skincare</p>
-                </div>
-            </div>
-        </div>
-        <div class = "col-6 col-md-4 col-xxl-2">
-            <div class="card rounded-0 border-0">
-                <img class="d-none d-xl-block imagem_categoria" src="./assets/categorias/categoria-pet.jpg" alt="Óculos escuro com armação dourada">
-                <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center card-text">Pets</p>
-                </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
             </div>
         </div>
     </div>
 
-    <h2 class="container text-center my-3 my-xl-5">Produtos que estão bombando:</h2>
+    <h2 class="titulo__box">Busque por categoria:</h2>
 
-    <div class="container row mx-auto">
-        <div class="col-12 col-md-6 col-xxl-4 pb-4">
-            <div class="card">
-                <img class="d-none d-xl-block imagem-produtos" src="./assets/produtos/malbec_desodorante-colonia.png" alt="Malbec X Desodorante Colônia 100ml">
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta Conforto</h5>
-                    <p class="card-text">Malbec X Desodorante Colônia 100ml</p>
-                    <p class="preco-sem-desconto">R$199,90</p>
-                    <p class="preco-com-desconto">R$179,90</p>
-                    <a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
-            </div>
-        </div>   
-        <div class="col-12 col-md-6 col-xxl-4 pb-4">
-            <div class="card">
-                <img class="d-none d-xl-block imagem-produtos" src="./assets/produtos/perfume-thaty.png" alt="Modelo feminina vestindo uma calça bege e uma blusa marron de onça.">
-                <div class="card-body">
-                    <h5 class="card-title">BOTICOLLECTION</h5>
-                    <p class="card-text">Thaty Desodorante Colônia 200ml</p>
-                    <p class="preco-sem-desconto">R$184,90</p>
-                    <p class="preco-com-desconto">R$149,90</p>
-                    <a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
-            </div>
-        </div>    
-        <div class="col-12 col-md-6 col-xxl-4 pb-4">
-            <div class="card">
-                <img class="d-none d-xl-block imagem-produtos" src="./assets/produtos/nativa-spa-lilac-creme-hidratante-corporal.png" alt="Loção Renovadora Desodorante Hidratante Corporal Nativa Spa Lilac 400ml">
-                <div class="card-body">
-                    <h5 class="card-title">Nativa SPA</h5>
-                    <p class="card-text">Loção Renovadora Desodorante Hidratante Corporal Nativa Spa Lilac 400ml.</p>
-                    <p class="preco-sem-desconto">R$82,90</p>
-                    <p class="preco-com-desconto">R$65,90</p>
-                    <a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
-            </div>
-        </div>    
-        <div class="col-12 col-md-6 col-xxl-4 pb-4">
-            <div class="card">
-                <img class="d-none d-xl-block imagem-produtos" src="./assets/produtos/cuide-se-bem-creme-hidratante-framboesa.png" alt="Modelo masculino vestindo uma jaqueta jeans e uma touca preta">
-                <div class="card-body">
-                    <h5 class="card-title">CUIDE-SE BEM</h5>
-                    <p class="card-text">Loção Desodorante Hidratante Cuide-se Bem Feira Framboesa 400ml</p>
-                    <p class="preco-sem-desconto">R$69,90</p>
-                    <p class="preco-com-desconto">R$55,90</p>
-                    <a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
+    <div class='box__categorias'>
+        <div class="box__categoria">
+            <img class="img_categoria" src="./assets/categorias/categoria-perfumes.jpg" alt="">
+            <div class="div__categorias__card-text">
+                <a href="#"><p class="categorias__card-text">Perfumaria</p></a>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-xxl-4 pb-4">
-            <div class="card">
-                <img class="d-none d-xl-block imagem-produtos" src="./assets/produtos/glos_lab_bubbaloo.png" alt="Modelo masculino vestindo uma jaqueta jeans e uma touca preta">
-                <div class="card-body">
-                    <h5 class="card-title">INTENSE</h5>
-                    <p class="card-text">Gloss Labial Rosa Tutti Frutti Bubbaloo 5ml</p>
-                    <p class="preco-sem-desconto">R$39,90</p>
-                    <p class="preco-com-desconto">R$39,90</p>
-                    <a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
+        <div class="box__categoria">
+            <img class="img_categoria" src="./assets/categorias/categoria-corpo.jpg" alt="">
+            <div class="div__categorias__card-text">
+                <a href="#"><p class="categorias__card-text">Corpo e Banho</p></a>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-xxl-4 pb-4">
-            <div class="card">
-                <img class="d-none d-xl-block imagem-produtos" src="./assets/produtos/intense-pop-base-cor-160-sensorial.png" alt="Modelo masculino vestindo uma jaqueta jeans e uma touca preta">
-                <div class="card-body">
-                    <h5 class="card-title">INTENSE</h5>
-                    <p class="card-text">Base Mate Camuflagem Cor 160 Pop! 20ml</p>
-                    <p class="preco-sem-desconto">R$25,90</p>
-                    <p class="preco-com-desconto">R$25,90</p>
-                    <a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
+        <div class="box__categoria">
+            <img class="img_categoria" src="./assets/categorias/categoria-makes.jpg" alt="">
+            <div class="div__categorias__card-text">
+                <a href="#"><p class="categorias__card-text">Makes</p></a>
             </div>
-        </div>        
-        <div class="col-12 col-md-6 col-xxl-4 pb-4">
-            <div class="card">
-                <img class="d-none d-xl-block imagem-produtos" src="./assets/produtos/kit-maes-floratta-red.png" alt="Modelo masculino usando um óculos de grau armação metálica grafite e vestindo uma blusa branca">
-                <div class="card-body">
-                    <h5 class="card-title">FLORATTA</h5>
-                    <p class="card-text">Kit Presente Dia das Mães Red (3 itens)</p>
-                    <p class="preco-sem-desconto">R$284,70</p>
-                    <p class="preco-com-desconto">R$229,90</p>
-                    <a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
+        </div>
+        <div class="box__categoria">
+            <img class="img_categoria" src="./assets/categorias/categoria-cabelo.jpg" alt="">
+            <div class="div__categorias__card-text">
+                <a href="#"><p class="categorias__card-text">Cabelos</p></a>
             </div>
-        </div>    
-        <div class="col-12 col-md-6 col-xxl-4 pb-4">
-            <div class="card">
-                <img class="d-none d-xl-block imagem-produtos" src="./assets/produtos/kit-maes-elysee-nuit-perfume-edp-creme-acetinado.png" alt="Bolsa couro marron">
-                <div class="card-body">
-                    <h5 class="card-title">ELYSÉE</h5>
-                    <p class="card-text">Combo Presente Dia das Mães Nuit  (3 itens)</p>
-                    <p class="preco-sem-desconto">R$431,70</p>
-                    <p class="preco-com-desconto">R$355,89</p>
-                    <a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
+        </div>
+        <div class="box__categoria">
+            <img class="img_categoria" src="./assets/categorias/categoria-shicare.png" alt="">
+            <div class="div__categorias__card-text">
+                <a href="#"><p class="categorias__card-text">Skincare</p></a>
+            </div>
+        </div>                
+        <div class="box__categoria">
+            <img class="img_categoria" src="./assets/categorias/categoria-pet1.jpg" alt="">
+            <div class="div__categorias__card-text">
+                <a href="#"><p class="categorias__card-text">Pets</p></a>
             </div>
         </div>
     </div>
 
-    <section class="pb4 bg-black text-bg-dark">
+    <h2 class="titulo__box-produtos">Produtos que estão bombando:</h2>
 
-        <h2 class="text-center py-3">Conheça todas as nossas facilidades</h2>
+    <div class="box__produtos" id="produtos">
+<!--    <div class="box__produtos__card">
+            <img class="imagem-produtos" src="${produto.imagem}" alt="${produto.alt}">
+            <div class="card-produto">
+                <h5 class="card-title">${produto.titulo}</h5>
+                <p class="card-text">${produto.descricao}</p>
+                <p class="card-text preco-sem-desconto">R$${produto.preco.toFixed(2)}</p>
+                <p class="card-text preco-com-desconto">R$${produto.preco.toFixed(2)}</p>
+                <a href="#" class="btn-produto">Ver mais</a>
+            </div>         
+        </div> -->
+    </div>
 
-        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3">
-            <div class="divs-facilidades d-flex align-items-center">
+    <section class="secao__facilidades">
+        
+        <h2 class="facilidade__titulo">Conheça todas as nossas facilidades</h2>
+
+        <div class="box__facilidades">
+            <div class="box__facilidade">
                 <div><i class="verde-limao bi bi-x-diamond fs-1"></i></div>
                 <div>
-                    <div class="ms-3 mb-1 verde-limao">PAGUE PELO PIX</div>
-                    <div class="texto-menor ms-3">Ganhe 5% OFF em pagamentos via PIX</div>
+                    <div class="divs__facilidades_text verde-limao">PAGUE PELO PIX</div>
+                    <div class="divs__facilidades_text">Ganhe 5% OFF em pagamentos via PIX</div>
                 </div>
             </div>
-            <div class="divs-facilidades d-flex">
+            <div class="box__facilidade">
                 <div><i class="verde-limao bi bi-arrow-repeat fs-1"></i></div>
                 <div>
-                    <div class="ms-3 mb-1 verde-limao">TROCA GRÁTIS</div>
-                    <div class="texto-menor ms-3">Fique livre para trocar em até 30 dias.</div>
+                    <div class="divs__facilidades_text verde-limao">TROCA GRÁTIS</div>
+                    <div class="divs__facilidades_text">Fique livre para trocar em até 30 dias.</div>
                 </div>
             </div>
-            <div class="divs-facilidades d-flex">
+            <div class="box__facilidade">
                 <div><i class="verde-limao bi bi-flower1 fs-1"></i></div>
                 <div>
-                    <div class="ms-3 mb-1 verde-limao">SUSTENTABILIDADE</div>
-                    <div class="texto-menor ms-3">Produto responsável, que respeita o meio ambiente.</div>
+                    <div class="divs__facilidades_text verde-limao icone">SUSTENTABILIDADE</div>
+                    <div class="divs__facilidades_text">Produto responsável, que respeita o meio ambiente.</div>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <form class="border border-secondary my-3  my-xl-5 p-3 text-center div-novidades mx-auto">
+    <div class="div__novidades">
         <h5>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h5>
-        <div class="input-group my-3">
-            <input type="email" class="form-control border-secondary rounded-0" placeholder="Digite seu e-mail" aria-label="Digite seu e-mail" aria-describedby="button-addon2"/>
-            <button type="button" class="btn btn-primary botao-lilas rounded-0 border-0" id="button-addon2">Enviar</button>
-        </div>
-    </form>
+        <form class="input-novidades">
+            <input type="email" id="email" class="input-email" placeholder="Digite seu e-mail"/>
+            <button type="button" class="btn__form-novidades botao-lilas" onclick="enviadoComSucesso()">Enviar</button>
+        </form>
+    </div>
 
-    <footer class="text-center bg-black text-bg-dark">
-        <p class="card-text py-3">2024 <i class="bi bi-c-circle"></i> Desenvolvido por Aline Rodrigues | Projeto fictício sem fins comerciais.</p>
+    <footer>
+        <div class="links__footer">
+            <a class="link__redeSocial" href="#"><i class="bi bi-whatsapp"></i></a>
+            <a class="link__redeSocial" href="#"><i class="bi bi-instagram"></i></a>
+            <a class="link__redeSocial" href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+        <div>
+            <p class="card-text">2024 &copy; Desenvolvido por Aline Rodrigues | Projeto fictício sem fins comerciais.</p>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="app/main.js"></script>
+    <script src="app/exibirOsProdutos.js"></script>
+    <script src="app/emailEnviadoComSucesso.js"></script>
+    <script src="app/slide.js"></script>
+
 </body>
 </html>
