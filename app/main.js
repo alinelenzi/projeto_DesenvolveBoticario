@@ -1,5 +1,5 @@
 let produtos = []
-const dados = "http://localhost:3000/produtos"
+const dados = "https://json-o-glamouria.vercel.app/produtos"
 getBuscarProdutos()
 
 async function getBuscarProdutos(){
